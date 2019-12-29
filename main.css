@@ -3,6 +3,7 @@
     font-family: sans-serif;
     margin: 0;
     text-align: center;
+    line-height: 1.5;
 }
 li {
     list-style: none;
@@ -10,15 +11,19 @@ li {
 }
 h1 {
     background-color: lightgrey;
+    padding: 15%;
 }
 h2 {
     background-color: darkgray;
+    padding: 10%;
 }
 p {
     background-color: silver;
+    padding: 8%;
 }
 .footer-text {
     background-color: #A0A0A0;
+    padding: 2%;
 }
 .nav-menu {
     display: flex;
