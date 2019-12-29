@@ -11,12 +11,13 @@
 <body>
     <nav>
         <ul class="nav-menu">
-            <li><img src="images/cheeseburger-menu.png" alt="Dropdown Menu" class="dd-menu"></li>
             <li class="nav-menu-name">Izaac Abrams</li>
-            <!-- in dropdown menu, not shown on mobile -->
-            <!-- <li>Projects</li>
-            <li>Github</li>
-            <li>LinkedIn</li> -->
+            <img src="images/cheeseburger-menu.png" alt="Dropdown Menu" class="dd-menu">
+        </ul>
+        <ul class="dd-items" hidden>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="https://github.com/izaacAbrams">Github</a></li>
+            <li>LinkedIn</li>
         </ul>
     </nav>
     <main>
@@ -33,6 +34,7 @@
             along with hiking anywhere there are mountains.</p>
     </section>
     <section>
+        <a name="projects"></a>
         <header>
             <h2>King of the Hill Trivia Game</h2>
         </header>
@@ -42,7 +44,10 @@
     </section>
     </main>
     <footer>
+
         <p class="footer-text">Feel free to email me: izaac.abrams25@gmail.com</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -27,13 +27,14 @@ p {
     font-family: 'Fauna One', serif;
 }
 .about-me-text {
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 36px;
     padding: 10%;
 }
 .footer-text {
     background-color: #232323;
     padding: 2%;
+    text-align: center;
 }
 .nav-menu {
     display: flex;
@@ -44,9 +45,13 @@ p {
 .nav-menu-name {
     margin-left: auto;
     margin-right: auto;
+    font-family: "Fauna One";
+    font-weight: 700;
+    font-size: 26px;
 }
 .dd-menu {
     height: 40px;
+    margin-right: 20px;
 }
 .screenshot {
     width: 100%;
@@ -54,4 +59,18 @@ p {
 .tech-used {
     background-color: #82C9BA;
     color: #232323;
+    padding: 3% 8%;
+}
+.gh-logo {
+    height: 40px;
+}
+.dd-items-show {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dd-items-hide {
+    display: none;
 }
