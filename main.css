@@ -2,7 +2,6 @@
     box-sizing: border-box;
     font-family: sans-serif;
     margin: 0;
-    text-align: center;
     line-height: 1.5;
 }
 li {
@@ -10,25 +9,37 @@ li {
     padding: 0 15px;
 }
 h1 {
-    background-color: lightgrey;
+    background-color: #A5FFEB;
     padding: 15%;
+    font-family: 'Playfair Display', serif;
 }
 h2 {
-    background-color: darkgray;
-    padding: 10%;
+    background-color: #232323;
+    padding: 7%;
+    font-family: 'Playfair Display', serif;
+    color: #DDDDDD;
+    text-align: center;
 }
 p {
-    background-color: silver;
+    background-color: #707070;
+    color: #DDDDDD;
     padding: 8%;
+    font-family: 'Fauna One', serif;
+}
+.about-me-text {
+    font-size: 18px;
+    line-height: 32px;
+    padding: 10%;
 }
 .footer-text {
-    background-color: #A0A0A0;
+    background-color: #232323;
     padding: 2%;
 }
 .nav-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1%;
 }
 .nav-menu-name {
     margin-left: auto;
@@ -41,5 +52,6 @@ p {
     width: 100%;
 }
 .tech-used {
-    background-color: darkgrey;
+    background-color: #82C9BA;
+    color: #232323;
 }
