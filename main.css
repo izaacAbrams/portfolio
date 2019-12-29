@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+}
+li {
+    list-style: none;
+    padding: 0 15px;
+}
+h1 {
+    background-color: lightgrey;
+}
+h2 {
+    background-color: darkgray;
+}
+p {
+    background-color: silver;
+}
+.footer-text {
+    background-color: #A0A0A0;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-menu-name {
+    margin-left: auto;
+    margin-right: auto;
+}
+.dd-menu {
+    height: 40px;
+}
+.screenshot {
+    width: 100%;
+}
+.tech-used {
+    background-color: darkgrey;
+}
