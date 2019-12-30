@@ -2,44 +2,167 @@
     box-sizing: border-box;
     font-family: sans-serif;
     margin: 0;
-    text-align: center;
     line-height: 1.5;
 }
 li {
     list-style: none;
-    padding: 0 15px;
+    padding: 5px 15px;
 }
 h1 {
-    background-color: lightgrey;
+    background-color: #A5FFEB;
     padding: 15%;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    line-height: 62px;
 }
 h2 {
-    background-color: darkgray;
-    padding: 10%;
+    padding: 7% 10%;
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    color: #232323;
 }
 p {
-    background-color: silver;
-    padding: 8%;
+    background-color: #232323;
+    color: white;
+    padding: 5% 10%;
+    font-family: 'Fauna One', serif;
+}
+hr {
+    width: 100px;
+    border: none;
+    height: 3px;
+    background-color: #A5FFEB;
+
+}
+.about-me-text {
+    font-size: 20px;
+    line-height: 40px;
+    padding: 10%;
 }
 .footer-text {
-    background-color: #A0A0A0;
+    background-color: #82C9BA;
     padding: 2%;
+    text-align: center;
+    color: #232323;
+    font-weight: 600;
 }
 .nav-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1%;
 }
 .nav-menu-name {
     margin-left: auto;
     margin-right: auto;
+    font-family: "Fauna One";
+    font-weight: 700;
+    font-size: 26px;
 }
 .dd-menu {
     height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
 }
 .screenshot {
     width: 100%;
 }
 .tech-used {
-    background-color: darkgrey;
+    padding: 2% 10%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #dfdfdf;
+}
+.gh-logo {
+    height: 40px;
+}
+.dd-items-show {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dd-items-hide {
+    display: none;
+}
+a {
+    text-decoration: none;
+    font-family: 'Fauna One', sans-serif;
+    color: #232323;
+}
+.tech-logo {
+    height: 50px;
+
+}
+.live-repo-links:hover {
+    text-decoration: underline;
+   
+}
+.live-repo-links {
+    padding: 0 20px;
+}
+.project-links {
+    text-align: center;
+    padding: 10px;
+}
+.li-logo {
+    height: 40px;
+}
+.nav-logo {
+    display: none;
+}
+.projects-heading {
+    padding: 3% 10%;
+}
+
+@media screen and (min-width: 950px){
+    h1 {
+        font-size: 40px;
+        padding: 10%;
+    }
+    h2 {
+        padding: 4% 10%;
+    }
+    p {
+        padding: 10% 2% 10% 65%;
+    }
+    .dd-menu {
+        display: none;
+    }
+    .dd-items {
+        display: none;
+    }
+    .nav-logo {
+        display: flex;
+        padding: 0 15px;
+    }
+    .nav-menu-name {
+        margin-left: 0;
+    }
+    .about-me-text {
+        font-size: 21px;
+        line-height: 40px;
+    }
+    .screenshot {
+        width: 60%;
+        float: left;
+    }
+    .project-links {
+        background-color: #232323;
+        padding: 20px;
+        border-bottom: 2px solid #bbbbbb;
+    }
+    .live-repo-links {
+        color: white;
+    }
+    .footer-text {
+        clear: both;
+    }
+    .tech-used {
+        padding: 4% 10%;
+    }
+    .project-bg {
+        background-color: #232323;
+    }
 }

@@ -4,44 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Fauna+One|Playfair+Display:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>Izaac's Portfolio</title>
 </head>
 <body>
     <nav>
         <ul class="nav-menu">
-            <li><img src="images/cheeseburger-menu.png" alt="Dropdown Menu" class="dd-menu"></li>
             <li class="nav-menu-name">Izaac Abrams</li>
-            <!-- in dropdown menu, not shown on mobile -->
-            <!-- <li>Projects</li>
-            <li>Github</li>
-            <li>LinkedIn</li> -->
+            <img src="images/cheeseburger-menu.png" alt="Dropdown Menu" class="dd-menu">
+            <a href="#projects" class="nav-logo">Projects</a>
+            <a href="https://github.com/izaacAbrams" target="_blank"><img src="images/github-logo.png" alt="Github Logo" class="gh-logo nav-logo"></a>
+            <a href="https://linkedin.com/in/izaac-abrams-a802a4179" target="_blank"><img src="images/LinkedIn-logo.png" alt="LinkedIn Logo" class="li-logo nav-logo"></a>
+        </ul>
+        <ul class="dd-items" hidden>
+            <li><a href="#projects">Projects</a></li><hr>
+            <li><a href="https://github.com/izaacAbrams" target="_blank">Github</a></li><hr>
+            <li><a href="https://linkedin.com/in/izaac-abrams-a802a4179" target="_blank">LinkedIn</a></li>
         </ul>
     </nav>
     <main>
     <header>
-    <h1>Hi, my name is Izaac. I am a full-stack developer with a love for mobile UX.</h1>
+    <h1>Hi, my name is Izaac. I am a full-stack developer with a love for making things work.</h1>
     <h2>A bit about me:</h2>
     </header>
     <section>
-        <p>I am currently a student of the Thinkful Software Engineering bootcamp.
+        <p class="about-me-text">&emsp; I am currently a student of the Thinkful Software Engineering bootcamp.
             I love coding because it requires a combination of creativity and problem-solving.
             It is a combination that fits me well, and because of that my passion and curiosity for 
-            it has continued to grow. While my passion is with coding, I also love learning about the feats of modern hardware, and 
+            it has continued to grow. <br> &emsp; While my passion is with coding, I also love learning about the feats of modern hardware, and 
             what software can do to push the hardware even further. A couple more interests of mine are the occasional video game,
             along with hiking anywhere there are mountains.</p>
     </section>
     <section>
+        <a name="projects"></a>
+        <h1 class="projects-heading">Projects:</h1>
         <header>
             <h2>King of the Hill Trivia Game</h2>
         </header>
+        <div class="project-bg">
         <img src="images/question-screenshot.PNG" class="screenshot" alt="Screenshot of Trivia Quiz">
-        <p>A multiple-choice game with trivia questions about the show King of the Hill.</p>
-        <p class="tech-used">HTML, CSS, JavaScript, Jquery</p>
+    
+        <div class="project-links">
+        <a href="https://izaacabrams.github.io/king-of-the-quiz-app/" target="_blank" class="live-repo-links">Live Demo</a>
+        <a href="https://github.com/izaacAbrams/king-of-the-quiz-app" target="_blank" class="live-repo-links">Repo</a>
+        </div>
+        <p class="project-text">A multiple-choice game with trivia questions about the show King of the Hill.</p>
+        <div class="tech-used"><img src="images/HTML5-Logo.png" alt="html logo" class="tech-logo">
+            <img src="images/CSS3-logo.png" alt="CSS logo" class="tech-logo">
+            <img src="images/jquery-logo.png" alt="jquery logo" class="tech-logo">
+        </div>
+        </div>
     </section>
     </main>
     <footer>
+
         <p class="footer-text">Feel free to email me: izaac.abrams25@gmail.com</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
