@@ -10,13 +10,13 @@ li {
 }
 h1 {
     background-color: #A5FFEB;
-    padding: 15%;
+    padding: 150px 50px;
     font-family: 'Playfair Display', serif;
     font-size: 36px;
     line-height: 62px;
 }
 h2 {
-    padding: 7% 10%;
+    padding: 50px;
     font-size: 32px;
     font-family: 'Playfair Display', serif;
     color: #232323;
@@ -24,7 +24,7 @@ h2 {
 p {
     background-color: #232323;
     color: white;
-    padding: 5% 10%;
+    padding: 100px 50px;
     font-family: 'Fauna One', serif;
 }
 hr {
@@ -32,16 +32,14 @@ hr {
     border: none;
     height: 3px;
     background-color: #A5FFEB;
-
 }
 .about-me-text {
     font-size: 20px;
     line-height: 40px;
-    padding: 10%;
 }
 .footer-text {
     background-color: #82C9BA;
-    padding: 2%;
+    padding: 30px;
     text-align: center;
     color: #232323;
     font-weight: 600;
@@ -50,11 +48,10 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1%;
+    padding: 5px;
 }
 .nav-menu-name {
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     font-family: "Fauna One";
     font-weight: 700;
     font-size: 26px;
@@ -65,7 +62,13 @@ hr {
     cursor: pointer;
 }
 .screenshot {
-    width: 100%;
+    min-height: 450px;
+    flex: 1;
+    background-size: cover;
+}
+.project-bg {
+    display: flex;
+    flex-direction: column;
 }
 .tech-used {
     padding: 2% 10%;
@@ -73,7 +76,7 @@ hr {
     justify-content: space-evenly;
     background-color: #dfdfdf;
 }
-.gh-logo {
+.gh-logo, .li-logo {
     height: 40px;
 }
 .dd-items-show {
@@ -93,11 +96,14 @@ a {
 }
 .tech-logo {
     height: 50px;
-
+}
+.project-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 .live-repo-links:hover {
     text-decoration: underline;
-   
 }
 .live-repo-links {
     padding: 0 20px;
@@ -106,30 +112,21 @@ a {
     text-align: center;
     padding: 10px;
 }
-.li-logo {
-    height: 40px;
-}
 .nav-logo {
     display: none;
 }
 .projects-heading {
-    padding: 3% 10%;
+    padding: 50px;
+}    
+p.project-text {
+    flex: 8;
+    display: flex;
 }
 @media screen and (min-width: 950px){
-    h1 {
-        font-size: 40px;
-        padding: 10%;
+    .project-text span {
+        margin: auto;
     }
-    h2 {
-        padding: 4% 10%;
-    }
-    p {
-        padding: 10% 2% 10% 65%;
-    }
-    .dd-menu {
-        display: none;
-    }
-    .dd-items {
+    .dd-items, .dd-menu {
         display: none;
     }
     .nav-logo {
@@ -139,14 +136,6 @@ a {
     .nav-menu-name {
         margin-left: 0;
     }
-    .about-me-text {
-        font-size: 21px;
-        line-height: 40px;
-    }
-    .screenshot {
-        width: 60%;
-        float: left;
-    }
     .project-links {
         background-color: #232323;
         padding: 20px;
@@ -155,13 +144,10 @@ a {
     .live-repo-links {
         color: white;
     }
-    .footer-text {
-        clear: both;
-    }
     .tech-used {
-        padding: 4% 10%;
+        flex: 2;
     }
     .project-bg {
-        background-color: #232323;
+        flex-direction: row;
     }
 }
