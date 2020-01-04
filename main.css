@@ -128,7 +128,7 @@ p.project-text {
         flex: 1;
     }
 }
-@media screen and (min-width: 950px){
+@media screen and (min-width: 900px){
     .project-text span {
         margin: auto;
     }
