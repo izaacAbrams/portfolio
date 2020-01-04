@@ -27,19 +27,14 @@ p {
     padding: 100px 50px;
     font-family: 'Fauna One', serif;
 }
-hr {
-    width: 100px;
-    border: none;
-    height: 3px;
-    background-color: #A5FFEB;
-}
+
 .about-me-text {
     font-size: 20px;
     line-height: 40px;
 }
 .footer-text {
     background-color: #82C9BA;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     color: #232323;
     font-weight: 600;
@@ -62,9 +57,10 @@ hr {
     cursor: pointer;
 }
 .screenshot {
-    min-height: 450px;
-    flex: 1;
+    min-height: 300px;
+    flex: 2;
     background-size: cover;
+    
 }
 .project-bg {
     display: flex;
@@ -122,6 +118,16 @@ p.project-text {
     flex: 8;
     display: flex;
 }
+@media screen and (max-width: 400px){
+    .screenshot {
+        min-height: 200px;
+    }
+}
+@media screen and (min-width: 1500px){
+    .screenshot{
+        flex: 1;
+    }
+}
 @media screen and (min-width: 950px){
     .project-text span {
         margin: auto;
@@ -149,5 +155,8 @@ p.project-text {
     }
     .project-bg {
         flex-direction: row;
+    }
+    .screenshot {
+        min-height: 450px;
     }
 }
