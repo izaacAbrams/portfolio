@@ -16,7 +16,6 @@ li {
   line-height: 62px;
 }
 h2 {
-  padding: 50px;
   font-size: 32px;
   font-family: "Forum", serif;
   color: #232323;
@@ -26,7 +25,7 @@ h3 {
   font-size: 30px;
   font-weight: 400;
   text-align: center;
-  padding: 30px;
+  padding: 10px;
   background-color: black;
   color: white;
 }
@@ -72,7 +71,7 @@ p {
 }
 .project-bg {
   display: flex;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   flex-direction: column;
 }
 
@@ -106,7 +105,7 @@ a {
   color: #232323;
 }
 .tech-logo {
-  height: 50px;
+  height: 30px;
 }
 .dd-menu-item:hover {
   text-decoration: underline;
@@ -131,7 +130,7 @@ a {
   display: none;
 }
 .projects-heading {
-  padding: 50px;
+  padding: 20px;
 }
 p.project-text {
   flex: 8;
@@ -162,9 +161,10 @@ p.project-text {
   z-index: 3;
   filter: opacity(0.6);
 }
+
 @media screen and (max-width: 400px) {
   .screenshot {
-    min-height: 200px;
+    min-height: 150px;
   }
   .portfolio__title {
     padding: 50px;
@@ -174,7 +174,7 @@ p.project-text {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
   .project-text span {
     margin: auto;
   }
@@ -208,5 +208,17 @@ p.project-text {
   }
   .portfolio__title {
     padding: 150px;
+  }
+  .projects-heading {
+    padding: 50px;
+  }
+  .tech-logo {
+    height: 50px;
+  }
+  .project-bg {
+    padding-bottom: 50px;
+  }
+  h3 {
+    padding: 30px
   }
 }
